@@ -28,6 +28,12 @@ yarn-error.log*
 # local env files
 .env*.local
 
+# package manager logs
+yarn.lock
+pnpm-lock.yaml
+npmrc
+package-lock.json
+
 # vercel
 .vercel
 

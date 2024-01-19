@@ -22,12 +22,10 @@ const HomeFeature: React.FC = () => {
         <div>Logo</div>
         <div>Menu</div>
         <div className="absolute right-[50px] cursor-pointer top-[110px]">
-          <div className="grid grid-rows-2 items-center grid-flow-col w-36 h-14 shadow-[-2px_4px_14px_0px_rgba(0,0,0,0.3)_inset] bg-gradient-to-r from-[#77C2D0] to-[#3D91A7] rounded-[80px]">
+          <div className="grid grid-rows-2 items-center grid-flow-col w-12 h-5 md:w-24 md:h-9 lg:w-36 lg:h-14 shadow-[-2px_4px_14px_0px_rgba(0,0,0,0.3)_inset] bg-gradient-to-r from-[#77C2D0] to-[#3D91A7] rounded-[80px]">
             <svg
-              className="row-span-2 -mr-4"
+              className="w-6 h-4 row-span-2 -mr-1 md:w-10 md:h-8 lg:w-16 lg:h-14 lg:-mr-4"
               xmlns="http://www.w3.org/2000/svg"
-              width="64"
-              height="54"
               viewBox="0 0 64 54"
               fill="none"
             >
@@ -92,9 +90,8 @@ const HomeFeature: React.FC = () => {
               </defs>
             </svg>
             <svg
+              className="w-[14px] h-[6px] md:w-[24px] md:h-[12px] lg:w-[43px] lg:h-[19px]"
               xmlns="http://www.w3.org/2000/svg"
-              width="43"
-              height="19"
               viewBox="0 0 43 19"
               fill="none"
             >
@@ -126,9 +123,8 @@ const HomeFeature: React.FC = () => {
               </g>
             </svg>
             <svg
+              className="w-[15px] h-[8px] md:w-[30px] md:h-[16px] lg:w-[45px] lg:h-[23px]"
               xmlns="http://www.w3.org/2000/svg"
-              width="45"
-              height="23"
               viewBox="0 0 45 23"
               fill="none"
             >
@@ -162,10 +158,8 @@ const HomeFeature: React.FC = () => {
               />
             </svg>
             <svg
-              className="row-span-2 self-center mb-3"
+              className="w-[8px] h-[5px] md: md:w-[15px] md:h-[10px] lg:w-[25px] lg:h-[15px] row-span-2 self-center"
               xmlns="http://www.w3.org/2000/svg"
-              width="25"
-              height="15"
               viewBox="0 0 30 15"
               fill="none"
             >
@@ -208,7 +202,7 @@ const HomeFeature: React.FC = () => {
           ></div>
           <div className="flex flex-col items-center py-[110px] px-[33px]">
             <div className="text-center">
-              <h1 className="text-[42px] font-normal leading-normal tracking-wide">
+              <h1 className="text-2xl md:text-4xl md:leading-normal lg:text-[42px] lg:leading-normal font-normal tracking-wide">
                 <span className="text-blue-500">G</span>
                 <span className="text-red-500">o</span>
                 <span className="text-yellow-500">o</span>
@@ -217,7 +211,7 @@ const HomeFeature: React.FC = () => {
                 <span className="text-red-500">e</span> Developer Student Club
               </h1>
 
-              <h2 className="text-[32px] font-normal leading-normal">
+              <h2 className="text-lg md:text-[28px] md:leading-normal lg:text-[32px] lg:leading-normal">
                 University of
                 <span className="border-2 border-yellow-500 px-1 rounded-full">
                   Muhammadiyah Surakarta
@@ -225,17 +219,20 @@ const HomeFeature: React.FC = () => {
               </h2>
             </div>
 
-            <div id="logoImg" className="flex flex-row my-[92px] space-x-32">
+            <div
+              id="logoImg"
+              className="relative flex flex-row my-[92px] space-x-32"
+            >
               <Image
                 src={GdscLogoLeft}
                 alt="GDSC Logo"
-                className="w-[396px] h-[435px]"
+                className="w-[123px] h-[145px] md:w-[198px] md:h-[218px] lg:w-[396px] lg:h-[435px]"
                 priority
               />
               <Image
                 src={GdscLogoRight}
                 alt="GDSC Logo"
-                className="w-[396px] h-[435px]"
+                className="w-[123px] h-[145px] md:w-[198px] md:h-[218px] lg:w-[396px] lg:h-[435px]"
                 priority
               />
             </div>
@@ -244,18 +241,18 @@ const HomeFeature: React.FC = () => {
 
         <div id="dividerYellow" className="skew-y-3 bg-yellow-500">
           <Marquee className="flex flex-row items-center py-[6px]">
-            <p className="text-white text-[40px] mx-4">
+            <p className="text-white mx-2 text-base md:text-xl md:leading-normal lg:text-[40px] lg:leading-normal lg:mx-4">
               #We Grow, We Learn, and We Connect.
             </p>
-            <div className="w-4 h-4 bg-white rounded-full"></div>
-            <p className="text-white text-[40px] mx-4">
+            <div className="w-2 h-2 lg:w-4 lg:h-4 bg-white rounded-full"></div>
+            <p className="text-white mx-2 text-base md:text-xl md:leading-normal lg:text-[40px] lg:leading-normal lg:mx-4">
               #We Grow, We Learn, and We Connect.
             </p>
-            <div className="w-4 h-4 bg-white rounded-full"></div>
-            <p className="text-white text-[40px] mx-4">
+            <div className="w-2 h-2 lg:w-4 lg:h-4 bg-white rounded-full"></div>
+            <p className="text-white mx-2 text-base md:text-xl md:leading-normal lg:text-[40px] lg:leading-normal lg:mx-4">
               #We Grow, We Learn, and We Connect.
             </p>
-            <div className="w-4 h-4 bg-white rounded-full"></div>
+            <div className="w-2 h-2 lg:w-4 lg:h-4 bg-white rounded-full"></div>
           </Marquee>
         </div>
 
@@ -269,7 +266,7 @@ const HomeFeature: React.FC = () => {
             <Image src={LogoUms} alt="UMS Logo" priority className="my-5" />
 
             <div className="max-w-[1086px] mb-44">
-              <h3 className="text-[40px] text-center px-40 mb-36">
+              <h3 className="text-xl text-center px-10 mb-10  md:text-4xl md:leading-normal lg:text-[40px] lg:leading-normal lg:px-40 lg:mb-36">
                 The GDSC UMS Chapter is part of a global community of over
                 <span className="border-2 border-green-500 px-1 rounded-full">
                   1500 universities.
@@ -277,10 +274,10 @@ const HomeFeature: React.FC = () => {
               </h3>
               <div className="grid grid-cols-2 gap-7">
                 <div className="py-3 px-5">
-                  <h6 className="text-xl font-bold mb-3">
+                  <h6 className="text-base md:text-xl lg:text-2xl font-bold mb-3">
                     Google Developer Student Clubs (GDSC)
                   </h6>
-                  <p>
+                  <p className="text-sm md:text-base lg:text-lg">
                     is a student-led community backed by Google Developers aimed
                     at empowering undergraduate students from all disciplines to
                     grow their knowledge in technology, build solutions for
@@ -289,10 +286,10 @@ const HomeFeature: React.FC = () => {
                   </p>
                 </div>
                 <div className="py-3 px-5">
-                  <h6 className="text-xl font-bold mb-3">
+                  <h6 className="text-base md:text-xl lg:text-2xl font-bold mb-3">
                     Google Developer Student Clubs (GDSC) UMS
                   </h6>
-                  <p>
+                  <p className="text-sm md:text-base lg:text-lg">
                     GDSC at the University of Muhammadiyah Surakarta is a
                     vibrant and innovative student community dedicated to
                     fostering technological learning, collaboration, and
